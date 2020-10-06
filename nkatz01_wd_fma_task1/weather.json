@@ -1,0 +1,59 @@
+ {
+        "weather": [
+            {
+                "cityID": 1,
+                "cityName": "London",
+                 "currerntCond": "Fresh Breeze and cloudy",
+               "temperature": {
+                    "amount": 17,
+                    "scale": "°C"
+                },
+               "windDirection": "SW",
+				"windSpeed": {
+                    "amount": 37,
+                    "scale": "mph"
+                },               
+                "windChilFactor":  {
+                    "amount": 15.6,
+                    "scale": "°C"
+                }, 
+                "iconName" : "cloud.png"
+            },
+            
+             {
+                "cityID": 2,
+                "cityName": "Altnaharra",
+                 "currerntCond": "Strong Breeze and heavy cloud",
+               "temperature": {
+                    "amount": 10,
+                    "scale": "°C"
+                },
+               "windDirection": "NW",
+				"windSpeed": {
+                    "amount": 44,
+                    "scale": "mph"
+                },               
+                "windChilFactor":  {
+                    "amount": 4.7,
+                    "scale": "°C"
+                },
+                "iconName" : "heavy cloud.png"
+            },
+            
+             {
+                "cityID": 3,
+                "cityName": "Enniskillen",
+                 "currerntCond": "Light Air and sunny",
+               "temperature": {
+                    "amount": 20,
+                    "scale": "°C"
+                },
+               "windDirection": "W",
+				"windSpeed": {
+                    "amount": 3,
+                    "scale": "mph"
+                } ,
+                "iconName" : "sun.png"
+            }
+        ]
+}

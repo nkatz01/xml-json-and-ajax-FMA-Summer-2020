@@ -1,0 +1,46 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Current Weather Application",
+    "description": "Current weather data for cities across the UK",
+   
+     "definitions": {
+    "temperature": {
+      "type": "object",
+      "properties" : { 
+							"amount" : { "type" : "number", "minimum": -273.15  },
+							"scale" : { "type" : "string", "pattern": "(^°[CF]$)"}
+						},
+      "required": ["amount", "scale" ]
+    }
+  },
+    
+	"type" : "object",
+	"properties" : {
+		"weather" : {
+		"type" : "array", 
+			"items" : { 
+				"type" : "object",
+				"properties" : { 
+					"cityID" : { "type": "integer", "minimum": 1  },
+					"cityName" : { "type" : "string" },
+					"currerntCond" : { "type" : "string" },
+					"windDirection" : { "type" : "string", "enum": ["N", "E", "S", "W", "NE","SE","SW","NW","NNE","ENE","ESE","SSE","SSW","WSW", "WNW","NNW"] },
+					"number" : { "type" : "integer", "minimum": 0.00 },
+					"location" : { "type" : "string" },
+					
+					"time" : { "type" : "string" },
+					"windSpeed" : { "type" : "object",
+						"properties" : { 
+							"amount" : { "type" : "integer", "minimum": 0  },
+							"scale" : { "type" : "string", "pattern": "(^mph$)|(^kph$)"}
+						}
+					},
+					 "windChilFactor" : { "$ref": "#/definitions/temperature"  }, 
+					 "iconName": {"type" : "string", "pattern": "(^([a-z]+(\\s[a-z]+)*).png$)"}
+					
+				},
+				  "required": ["cityID", "cityName" ,"currerntCond","temperature","windDirection","windSpeed", "iconName"]
+			}
+		}
+	}
+}

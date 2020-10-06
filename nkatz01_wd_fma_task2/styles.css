@@ -1,0 +1,28 @@
+body {
+font-family: Tahoma, arial, sans-serif;
+}
+
+h1 {color: #554000;}
+
+
+ .output {
+    font: 1rem 'Fira Sans', sans-serif;
+} 
+
+ p, dt {
+    font-weight: bold;
+}
+
+dt, dd {
+    font-size: 1.5em;
+}
+dl {
+    margin-left: 1.5em;
+}
+dd{
+    padding-bottom: .25em;
+}
+#warn{
+    color: red;
+}
+

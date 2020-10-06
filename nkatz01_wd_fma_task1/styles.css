@@ -1,0 +1,41 @@
+body {
+font-family: Tahoma, arial, sans-serif;
+margin-left: 1.5em;
+}
+
+h1 {color: #554000;}
+
+table {
+ table-layout: auto;
+  
+ border-collapse: collapse; 
+ line-height: 250%;
+    font-weight: 100;
+    font-size: 1.5em;
+    
+}
+  
+th { 
+background-color: #D4BA6A;
+border-top: solid 2px #333333;
+border-bottom: solid 2px #333333;
+}
+
+td {
+padding: 0.25em;
+}
+
+th{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    
+}
+tr , td, th{
+border: solid 1px #999;
+}
+
+#index {
+width: 1em;
+} 
+ 
+
